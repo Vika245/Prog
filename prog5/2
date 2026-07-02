@@ -1,0 +1,3 @@
+weight, height = map(float, input("Введите свой вес(кг) и рост(М): ").split())
+imt = weight / (height * height)
+print(f"Ваш ИМТ: {imt:.1f}")
