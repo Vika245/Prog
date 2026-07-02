@@ -1,0 +1,35 @@
+print("================СТАТУС ЗАКАЗА================")
+status = input("Введите статус заказа: ")
+match status:
+    case "pending":
+        status1 = "В ожидании"
+        description = "Ваш заказа принят и находится в ожидании"
+        emoji = "✔"
+        time = "До 1 дня"
+    case "processing":
+        status1 = "В обработке"
+        description = "Ваш заказ в обработке готовится к отправке"
+        emoji = "📦"
+        time = "1-2 дня"
+    case "shipped":
+        status1 = "Отправлен"
+        description = "Ваш заказ отправлен и едет к вам"
+        emoji = "✈"
+        time = "2-7 дней"
+    case "delivered":
+        status1 = "Доставлен"
+        description = "Ваш заказ доставлен"
+        emoji = "✅"
+        time = "Доставка завершена"
+    case "cancelled":
+        status1 = "Отменён"
+        description = "Ваш заказ был отменён"
+        emoji = "❌"
+        time = "Нет"
+    case _:
+        print("Неверный статус заказа!")
+
+
+print(f"Статус: {status1}")
+print(f"Описание: {emoji} {description}")
+print(f"Время ожидания: {time}")
