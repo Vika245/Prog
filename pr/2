@@ -1,0 +1,16 @@
+class Monster:
+    def __init__(self, name="Неизвестная тварь", hp="100", dmg="10"):
+        self.name = name
+        self.hp = hp
+        self.dmg = dmg
+
+        print("Монстр: ", self.name)
+        print("HP: ", self.hp)
+        print("DMG: ", self.dmg)
+
+
+a = input().split()
+b = input().split()
+
+m1 = Monster(a[0], a[1], a[2])
+m2 = Monster(b[0], b[1], b[2])
